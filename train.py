@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt # IMPORTAZIONE PER I GRAFICI
 
 def train_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    print(f"🔥 Avvio addestramento sul device: {device}")
+    print(f"Avvio addestramento sul device: {device}")
 
     cartella_img = os.environ.get('DATASET_IMG', r'C:\Users\39324\Desktop\Dataset Kaggle\Images_PNG_Pronte')
     cartella_mask = os.environ.get('DATASET_MASK', r'C:\Users\39324\Desktop\Dataset Kaggle\Mask_PNG_Pronte')
